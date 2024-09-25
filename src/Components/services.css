@@ -1,0 +1,35 @@
+.services h1 {
+  text-align: center;
+  font-weight: bold; /* Bold text */
+  padding-bottom: 20px; /* Padding between the header and the content below */
+}
+
+.servicecontainer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 70px;
+  padding: 20px; /* Padding between the container and the outer content */
+}
+
+.card {
+  overflow: hidden;
+  border-radius: 15px; /* Optional border radius for the card itself */
+  padding: 15px; /* Padding inside the card */
+}
+
+.card-img-top {
+  border-radius: 25%; /* This makes the image circular */
+  width: 100%;  /* Ensure the image takes full width of the container */
+  height: auto; /* Adjust height to maintain aspect ratio */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.card-img-top:hover {
+  transform: scale(1.1); /* Zoom-in effect */
+}
+
+.card-text {
+  text-align: center;
+  font-weight: bold; /* Bold text for card description */
+  padding-top: 10px; /* Padding between the image and text */
+}

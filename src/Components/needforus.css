@@ -1,0 +1,27 @@
+.Needcontainer {
+    background-color:azure; /* Light grey background for contrast */
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+.contentofneed p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 20px;
+    color:#00203F;
+    font-size: larger;
+    width: 620px;
+    
+  }
+  .contentofneed{
+    padding-top: 20px;
+    color:#b3b470a9;
+    font: bolder;
+  }
+ .contentofneed img{
+    width: 230px;
+    height: 130px;
+     padding-left: 390px;    
+     padding-top: 20px;
+ }

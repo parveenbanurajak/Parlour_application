@@ -1,0 +1,22 @@
+.Navcontainer{
+    display: flex;
+    justify-content: space-between;
+}
+.links {
+    margin-top: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none; 
+    font-size: 1.2rem;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline; 
+  }
+  
+  

@@ -1,0 +1,87 @@
+.contact-section {
+  width: 60%; /* Reduced width */
+  height: auto; /* Keep height adaptable */
+  max-width: 30rem; /* Reduced max width */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem 1rem; /* Optional padding adjustment */
+}
+
+.contactcontainer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #253439;
+  color:wheat;
+}
+
+.form-group-container {
+  border-color: #121213;
+  display: grid;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 0.3rem;
+}
+
+.form-input,
+.form-textarea {
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  height: 2.5rem;
+  width: 70%; /* Reduced width */
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.form-textarea {
+  min-height: 120px;
+}
+
+.form-submit {
+  width: 90%; /* Reduced width */
+  margin-top: 1.2rem;
+  background-color: #121213;
+  color: #fff;
+  padding: 13px 5px;
+  border-radius: 0.375rem;
+}
+
+.form-input,
+.form-textarea {
+  padding: 0.5rem;
+  border: 1px solid #121213; /* Changed border to black */
+  display: flex;
+  height: 2.5rem;
+  width: 85%; /* Reduced width */
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.mapforlocation {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+iframe {
+  margin: 45px;
+  margin-left: 45px;
+  height: 490px; /* Adjust the height as needed */
+  width: 85%; /* Make the iframe width the same as the input fields */
+  border-radius: 15px;
+  border: 2px solid;
+}
+#service{
+  width: 89%;
+  border-radius: 5px;
+  height: 2.5rem;
+
+}
