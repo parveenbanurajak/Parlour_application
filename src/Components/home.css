@@ -7,6 +7,10 @@ body{
 
 }
 
+
+
+
+
 .container {
   display: flex;
   justify-content: space-between; /* Ensures the quote and image are spread across the container */
