@@ -11,7 +11,7 @@ const Services = () => {
   return ( 
     <div>
       <div className="services">
-        <h1>Services</h1>
+        {/* <h1>Services</h1> */}
       </div>
       <div className="servicecontainer">
         <div className="service1">
@@ -60,7 +60,7 @@ const Services = () => {
           <div className="card" style={{ width: "18rem" }}>
             <img src={medicure}className="card-img-top" alt="eye image" />
             <div className="card-body">
-              <p className="card-text">Medicure</p>
+              <p className="card-text">Manicure</p>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import MAYURIS from '../assets/MAYURIS.png';
-import './navbar.css'
+import './navbar.css';
 
 const Navbar = () => {
   return (
@@ -10,14 +11,14 @@ const Navbar = () => {
           <img src={MAYURIS} alt="Logo" style={{ width: '150px' }} />
         </div>
         <div className="links">
-          <a href="/" className="nav-link">Home</a>
-          <a href="/services" className="nav-link">Services</a>
-          <a href="/products" className="nav-link">Products</a>
-          <a href="/contact" className="nav-link">Contact Us</a>
+          <Link to="/" className="nav-link">Home</Link>
+          <Link to="/needforus" className="nav-link">Needforus</Link>
+          <Link to="/services" className="nav-link">Services</Link>
+          <Link to="/contact" className="nav-link">Contact Us</Link>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Navbar;
