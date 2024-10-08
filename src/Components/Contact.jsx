@@ -42,6 +42,9 @@ const Contact = () => {
                   <option value="hair_coloring">Hair Coloring</option>
                   <option value="facial">Facial</option>
                   <option value="manicure">Manicure</option>
+                  <option value="manicure">Earlobe</option>
+                  <option value="manicure">Hair Extension</option>
+                  <option value="manicure">Waxing</option>
                   <option value="pedicure">Pedicure</option>
                 </select>
               </div>

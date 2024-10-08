@@ -8,7 +8,10 @@ const Navbar = () => {
     <div>
       <div className="Navcontainer">
         <div className="logo">
-          <img src={MAYURIS} alt="Logo" style={{ width: '150px' }} />
+          {/* Wrap the logo image with the Link component */}
+          <Link to="/">
+            <img src={MAYURIS} alt="Logo" style={{ width: '150px' }} />
+          </Link>
         </div>
         <div className="links">
           <Link to="/" className="nav-link">Home</Link>
