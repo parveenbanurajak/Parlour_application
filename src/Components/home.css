@@ -9,19 +9,17 @@ body{
 .container {
   display: flex;
   justify-content: space-between; /* Ensures the quote and image are spread across the container */
-  align-items: flex-start; /* Aligns both the quote and image to the top */
+  flex-direction: row;
 }
 
 .quote {
-  margin-top: 110px; /* Adjust this value to move the quote higher */
+  margin-top: 90px; /* Adjust this value to move the quote higher */
   font-family: Garamond, serif;
-  padding-left: 70px;
-  width: 50%; /* Takes half of the container's width */
+  max-width: 50%;
 }
 
 .homeimage {
   display: flex;
-  justify-content: flex-end; /* Aligns the image to the right side */
   width: 50%; /* Takes the other half of the container's width */
 }
 

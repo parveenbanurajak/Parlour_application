@@ -1,5 +1,4 @@
 import React from 'react';
-import product from '../assets/product.png';
 import './needforus.css';
 
 const Needforus = () => {
@@ -7,7 +6,6 @@ const Needforus = () => {
     <div>
       <div className="Needcontainer">
         <div className="beautyproducts">
-          <img src={product} alt="Beauty Products" />
         </div>
         <div className="contentofneed">
           <h2>Why You Need Us?</h2>

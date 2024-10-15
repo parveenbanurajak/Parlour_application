@@ -1,97 +1,88 @@
 import React from "react";
-import "./services.css";
-import eyebrow from '../assets/eyebrow.png'; // Importing the eye image
-import haircut from '../assets/haircut.png';
-import facial from '../assets/facial.png';
-import pedicure from '../assets/pedicure.png';
-import medicure from '../assets/medicure.png';
-import haircolor from '../assets/haircolor.png';
-import hairextension from '../assets/hairextension.png';
-import earlobe from '../assets/earlobe.png';
-import waxing from '../assets/waxing.png';
+import eyebrow from "../assets/eyebrow.png"; 
+import haircut from "../assets/haircut.png";
+import facial from "../assets/facial.png";
+import pedicure from "../assets/pedicure.png";
+import medicure from "../assets/medicure.png";
+import haircolor from "../assets/haircolor.png";
+import hairextension from "../assets/hairextension.png";
+import waxing from "../assets/waxing.png";
+import Blowdry from "../assets/Blowdry.jpg";
+import Keratin from "../assets/Keratin.jpg";
+import earlobe from "../assets/Earlobe.jpg";
+import Smoothening from "../assets/Smoothening.jpg";
+import './services.css';
+
+// Reusable service card component
+const ServiceCard = ({ image, title, customStyle }) => {
+  return (
+    <div className="card" style={customStyle}>
+      <img
+        src={image}
+        className="card-img-top"
+        alt={title}
+        style={{ height: "300px", objectFit: "cover" }}
+      />
+      <div className="card-body">
+        <p className="card-text">{title}</p>
+      </div>
+    </div>
+  );
+};
+
 const Services = () => {
-  return ( 
+  const serviceData1 = [
+    { image: eyebrow, title: "Eyebrow Threading" },
+    { image: facial, title: "Facial Treatment" },
+    { image: haircut, title: "Haircut" },
+    { image: hairextension, title: "Hair Extension" },
+  ];
+
+  const serviceData2 = [
+    { image: Blowdry, title: "Permanent Blowdry" },
+    { image: medicure, title: "Manicure" },
+    { image: Keratin, title: "Keratin" },
+    { image: haircolor, title: "Haircolor" },
+  ];
+
+  const serviceData3 = [
+    { image: Smoothening, title: "Smoothening" },
+    { image: pedicure, title: "Pedicure" },
+    { image: earlobe, title: "Earlobe" },
+    { image: waxing, title: "Waxing" },
+  ];
+
+  return (
     <div>
       <div className="services">
-        {/* <h1>Services</h1> */}
+        <h1>Providing Services</h1>
       </div>
+
+      {/* First row of services */}
       <div className="servicecontainer">
-        <div className="service1">
-          <div className="card" style={{ width: "18rem" }}>
-            <img src={eyebrow} className="card-img-top" alt="eye image" />
-            <div className="card-body">
-              <p className="card-text">Eyebrow Threading</p>
-            </div>
+        {serviceData1.map((service, index) => (
+          <div key={index} className="service1">
+            <ServiceCard image={service.image} title={service.title} />
           </div>
-        </div>
-        <div className="service2">
-          <div className="card" style={{ width: "18rem" }}>
-            <img src={facial} className="card-img-top" alt="eye image" />
-            <div className="card-body">
-              <p className="card-text">Facial treatment</p>
-            </div>
-          </div>
-        </div>
-        <div className="service3">
-          <div className="card" style={{ width: "18rem" }}>
-            <img src={haircut} className="card-img-top" alt="eye image" />
-            <div className="card-body">
-              <p className="card-text">Haircut</p>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
+
+      {/* Second row of services */}
       <div className="servicecontainer">
-        <div className="service1">
-          <div className="card" style={{ width: "18rem" }}>
-            <img src={pedicure} className="card-img-top" alt="eye image" />
-            <div className="card-body">
-              <p className="card-text">Pedicure</p>
-            </div>
+        {serviceData2.map((service, index) => (
+          <div key={index} className={`service${index === 3 ? '3' : '1'}`}>
+            <ServiceCard image={service.image} title={service.title} />
           </div>
-        </div>
-        <div className="service2">
-          <div className="card" style={{ width: "18rem" }}>
-            <img src={haircolor} className="card-img-top" alt="eye image" />
-            <div className="card-body">
-              <p className="card-text">Hair color</p>
-            </div>
-          </div>
-        </div>
-        <div className="service3">
-          <div className="card" style={{ width: "18rem" }}>
-            <img src={medicure}className="card-img-top" alt="eye image" />
-            <div className="card-body">
-              <p className="card-text">Manicure</p>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
+
+      {/* Third row of services */}
       <div className="servicecontainer">
-        <div className="service1">
-          <div className="card" style={{ width: "18rem" }}>
-            <img src={earlobe} className="card-img-top" alt="eye image" />
-            <div className="card-body">
-              <p className="card-text">Hair Extension</p>
-            </div>
+        {serviceData3.map((service, index) => (
+          <div key={index} className={`service${index === 3 ? '3' : '1'}`}>
+            <ServiceCard image={service.image} title={service.title} />
           </div>
-        </div>
-        <div className="service2">
-          <div className="card" style={{ width: "18rem" }}>
-            <img src={hairextension} className="card-img-top" alt="eye image" />
-            <div className="card-body">
-              <p className="card-text">Earlobe</p>
-            </div>
-          </div>
-        </div>
-        <div className="service3">
-          <div className="card" style={{ width: "18rem" }}>
-            <img src={waxing}className="card-img-top" alt="eye image" />
-            <div className="card-body">
-              <p className="card-text">Manicure</p>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

@@ -35,7 +35,6 @@
   border: 1px solid #e5e7eb;
   display: flex;
   height: 2.5rem;
-  width: 70%; /* Reduced width */
   border-radius: 0.375rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -46,7 +45,7 @@
 }
 
 .form-submit {
-  width: 89%; /* Reduced width */
+  width: 80%; /* Reduced width */
   margin-top: 1.2rem;
   background-color: #121213;
   color: #fff;
@@ -60,7 +59,7 @@
   border: 1px solid #121213; /* Changed border to black */
   display: flex;
   height: 2.5rem;
-  width: 85%; /* Reduced width */
+  width: 80%; /* Reduced width */
   border-radius: 0.375rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -80,7 +79,7 @@ iframe {
   border: 2px solid;
 }
 #service{
-  width: 89%;
+  width: 80%;
   border-radius: 5px;
   height: 2.5rem;
 
