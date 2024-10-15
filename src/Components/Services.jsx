@@ -9,7 +9,7 @@ import hairextension from "../assets/hairextension.png";
 import waxing from "../assets/waxing.png";
 import Blowdry from "../assets/Blowdry.jpg";
 import Keratin from "../assets/Keratin.jpg";
-import earlobe from "../assets/Earlobe.jpg";
+import earlobe from "../assets/earlobe.jpg";
 import Smoothening from "../assets/Smoothening.jpg";
 import './services.css';
 
