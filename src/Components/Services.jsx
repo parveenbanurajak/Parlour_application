@@ -55,7 +55,7 @@ const Services = () => {
   return (
     <div>
       <div className="services">
-        <h1>Providing Services</h1>
+        <h1>Providing Services for the client</h1>
       </div>
 
       {/* First row of services */}
