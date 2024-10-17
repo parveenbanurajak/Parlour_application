@@ -10,9 +10,10 @@
   }
   
   .nav-link {
-    color: white;
+    color: rgb(20, 20, 20);
     text-decoration: none; 
-    font-size: 1.2rem;
+    font-weight: 550;
+    font-size: medium;
   }
   
   .nav-link:hover {

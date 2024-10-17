@@ -1,11 +1,11 @@
 import React from 'react';
 import './needforus.css';
-
 const Needforus = () => {
   return (
     <div>
       <div className="Needcontainer">
         <div className="beautyproducts">
+          {/* <img src={}/> */}
         </div>
         <div className="contentofneed">
           <h2>Why You Need Us?</h2>

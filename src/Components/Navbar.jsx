@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="logo">
           {/* Wrap the logo image with the Link component */}
           <Link to="/">
-            <img src={MAYURIS} alt="Logo" style={{ width: '150px' }} />
+            <img src={MAYURIS} alt="Logo" style={{ width: '120px' }} />
           </Link>
         </div>
         <div className="links">
