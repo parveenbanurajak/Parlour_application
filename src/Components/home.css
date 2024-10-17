@@ -1,0 +1,52 @@
+@keyframes popUp {
+    0% {
+      transform: translateY(100%); /* Start off the screen (bottom) */
+      opacity: 0; /* Make it invisible initially */
+    }
+    100% {
+      transform: translateY(0); /* End at the original position */
+      opacity: 1; /* Make it fully visible */
+    }
+  }
+  
+  .containerofhome {
+    font-family: "Merienda", serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+  }
+  
+  .contentofhome {
+    color: #080808;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    transform: translateY(100%); /* Start with content off the screen */
+    opacity: 0; /* Start with content hidden */
+    animation: popUp 1.5s ease-out forwards; /* Trigger the animation */
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .contentofhome p {
+    font-size: 1.5rem;
+  }
+  span{
+    color: brown;
+  }
+  .experience{
+    padding-top: 60px;
+  }
+  .imgforexperience img{
+    border-radius: 5%;
+     margin: 20px;
+     }
