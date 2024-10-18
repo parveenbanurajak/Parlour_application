@@ -5,6 +5,7 @@ import Home from './Components/Home';
 import Needforus from './Components/Needforus';
 import Services from './Components/Services';
 import Contact from './Components/Contact';
+import Footer from './Components/Footer.jsx';
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+    <Footer/>
     </Router>
   );
 };
