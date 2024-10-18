@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './home.css';
-import homepageImage from '../assets/homepage.png'; // Import the image
-import lipstick from "../assets/lipstick.png";
+import homepageImage from '../assets/homepage.png'; 
+import Needforus from './Needforus';
+import Services from './Services';
+import Contact from './Contact';// Import the image
 const Home = () => {
   // State for the experience counter
   const [experienceYears, setExperienceYears] = useState(1);
@@ -32,15 +34,15 @@ const Home = () => {
           <p>Enhance your beauty, embrace your confidence. Discover your best self with our personalized care.</p>
         </div>
       </div>
-
-      <div className="experience">
-        <div className="imgforexperience">
-          <img src={lipstick}/>
-        </div>
-        <div className="contentofexperience">
-          {/* <h2>Experience: {experienceYears} Years</h2> Counter displayed here */}
-        </div>
-      </div>
+      <section id="needforus">
+        <Needforus />
+      </section>
+      <section id="services">
+        <Services />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
     </div>
   );
 };

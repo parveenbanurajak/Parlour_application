@@ -10,13 +10,15 @@
   margin-left: 30px;
   padding: 20px; /* Padding between the container and the outer content */
 }
-
 .card {
+  
   overflow: hidden;
   border-radius: 95px; /* Optional border radius for the card itself */
   padding: 25px; 
   color: black;
+  border-color: black;
 }
+
 
 .card-img-top {
   border-radius: 25%; /* This makes the image circular */
