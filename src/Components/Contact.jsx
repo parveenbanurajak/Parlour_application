@@ -38,14 +38,18 @@ const Contact = () => {
                 <select id="service" name="service" className="form-select" required>
                   <option value="">Select a service</option>
                   <option value="eyebrow_threading">Eyebrow Threading</option>
+                  <option value="hair_cut">Facial Treatment</option>
                   <option value="hair_cut">Hair Cut</option>
                   <option value="hair_coloring">Hair Coloring</option>
                   <option value="facial">Facial</option>
                   <option value="manicure">Manicure</option>
                   <option value="manicure">Earlobe</option>
                   <option value="manicure">Hair Extension</option>
-                  <option value="manicure">Waxing</option>
+                  <option value="manicure">Smoothening</option>
+                  <option value="pedicure">Keratin</option>
                   <option value="pedicure">Pedicure</option>
+                  <option value="manicure">Permanent Blowdry</option>
+
                 </select>
               </div>
               <div className="form-group">
